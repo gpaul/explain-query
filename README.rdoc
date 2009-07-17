@@ -1,7 +1,3 @@
-= explain-query
-
-* http://github.com/g00k/explain-query/tree/master
-
 == DESCRIPTION:
 
 The explain-query gem allows you to 'EXPLAIN' your ActiveRecord::Base#find calls from the safety of your Rails console.
@@ -14,16 +10,15 @@ The library adds the #explain method to ActiveRecord::Base (ie. all your models.
 
 Here's a quick sample:
 
->> Post.explain do
-?> Post.first
->> end
+  >> Post.explain do
+  ?> Post.first
+  >> end
   SELECT * FROM `posts`  LIMIT 1
    select_type | key_len | table | id | possible_keys | type | Extra | rows | ref | key
    ------------------------------------------------------------------------------------
    SIMPLE      |         | posts | 1  |               | ALL  |       | 6    |     |
 
-=> #<Post id: 2, title: "First Post", content: "some content\r\n", created_at: "2009-07-07 09:19:46", updated_at: "2009-07-17 14:15:01", permalink: "first-post">
->>
+  => #<Post id: 2, title: "First Post", content: "some content\r\n", created_at: "2009-07-07 09:19:46", updated_at: "2009-07-17 14:15:01", permalink: "first-post">
 
 == REQUIREMENTS:
 
@@ -33,12 +28,12 @@ This library obviously requires the ActiveRecord library.
 
 To install, simply run:
 
-sudo gem install explain-query
+  sudo gem install explain-query
 
 and then require it from your Rails console:
 
-$ ./script/console
->> require 'explain-query'
+  $ ./script/console
+  >> require 'explain-query'
 
 == LICENSE:
 

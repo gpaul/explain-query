@@ -28,7 +28,7 @@ This library obviously requires the ActiveRecord library.
 
 To install, simply run:
 
-  sudo gem install explain-query
+  sudo gem install g00k-explain-query
 
 and then require it from your Rails console:
 

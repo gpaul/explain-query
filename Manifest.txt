@@ -1,11 +1,9 @@
+.autotest
 History.txt
 Manifest.txt
-README.rdoc
+README.txt
 Rakefile
+explain-query.gemspec
 lib/explain-query.rb
 lib/explain-query/explain-query.rb
-script/console
-script/destroy
-script/generate
-test/test_helper.rb
-test/test_explain-query.rb
+test/test_explain_query.rb

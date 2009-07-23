@@ -1,7 +1,7 @@
 $:.unshift File.dirname(__FILE__)
 
 module ExplainQuery
-  VERSION = '0.0.1'
+  VERSION = '0.1.1'
 end
 
 if defined?(ActiveRecord::ConnectionAdapters::MysqlAdapter)

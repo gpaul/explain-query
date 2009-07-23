@@ -1,8 +1,10 @@
 require "test/unit"
-require "explain_query"
+require "explain-query"
 
 class TestExplainQuery < Test::Unit::TestCase
-  def test_sanity
-    flunk "write tests or I will kneecap you"
+
+  # Still figuring out how this gem should be tested.
+  def test_explain_block_returns_equivalient_results
+    
   end
 end
